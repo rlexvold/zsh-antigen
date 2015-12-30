@@ -14,9 +14,6 @@ antigen-bundle $ZSHA_BASE/bundles/git-completion
 
 antigen-theme $ZSHA_BASE/themes randy
 
-# For SSH, starting ssh-agent is annoying
-antigen bundle ssh-agent
-
 # Node Plugins
 antigen-bundle coffee
 antigen-bundle node
