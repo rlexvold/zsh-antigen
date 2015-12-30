@@ -1,4 +1,4 @@
-ZSHA_BASE=$HOME/.zsh-antigen
+ZSHA_BASE=$HOME/.dot-files/zsh-antigen
 source $ZSHA_BASE/antigen/antigen.zsh
 
 antigen-use oh-my-zsh
@@ -46,8 +46,3 @@ alias sshUi='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ec2-user@ui
 alias sshDb='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ubuntu@db.softblade.net'
 alias sshSpark='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ubuntu@spark.softblade.net'
 alias sshCustomer='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ec2-user@customer.softblade.net'
-
-if [ -d $HOME/.rbenv ]; then
-	eval "$(rbenv init -)"
-fi
-
