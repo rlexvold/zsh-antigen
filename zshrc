@@ -7,7 +7,14 @@ antigen-bundle tmux
 antigen-bundle tmuxinator
 antigen-bundle zsh-users/zsh-syntax-highlighting
 antigen-bundle scala
+antigen-bundle sbt
+antigen-bundle sudo
+antigen-bundle yum
+antigen-bundle gradle
+antigen-bundle mvn
 antigen-bundle sublime
+antigen-bundle colored-man-pages
+antigen-bundle common-aliases
 
 antigen-bundle zsh-users/zsh-history-substring-search
 antigen-bundle $ZSHA_BASE/bundles/git-completion
