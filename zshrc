@@ -3,47 +3,45 @@ source $ZSHA_BASE/antigen/antigen.zsh
 
 antigen-use oh-my-zsh
 antigen-bundle git
-antigen-bundle tmux
-antigen-bundle tmuxinator
-antigen-bundle zsh-users/zsh-syntax-highlighting
+# antigen-bundle tmux
+# antigen-bundle tmuxinator
+# antigen-bundle zsh-users/zsh-syntax-highlighting
 antigen-bundle scala
 antigen-bundle sbt
 antigen-bundle sudo
-antigen-bundle yum
+# antigen-bundle yum
 antigen-bundle gradle
 antigen-bundle mvn
-antigen-bundle sublime
+# antigen-bundle sublime
 antigen-bundle colored-man-pages
-antigen-bundle common-aliases
+# antigen-bundle common-aliases
 
-antigen-bundle zsh-users/zsh-history-substring-search
-antigen-bundle $ZSHA_BASE/bundles/git-completion
+# antigen-bundle zsh-users/zsh-history-substring-search
+# antigen-bundle $ZSHA_BASE/bundles/git-completion
 
 antigen-theme $ZSHA_BASE/themes randy
 
 # Node Plugins
-antigen-bundle coffee
-antigen-bundle node
-antigen-bundle npm
+# antigen-bundle coffee
+# antigen-bundle node
+# antigen-bundle npm
 
 # Python Plugins
-antigen-bundle pip
-antigen-bundle python
+# antigen-bundle pip
+# antigen-bundle python
 
 # OS specific plugins
 if [[ $CURRENT_OS == 'OS X' ]]; then
     antigen-bundle brew
-    antigen-bundle brew-cask
-    antigen-bundle gem
-    antigen-bundle osx
+#   antigen-bundle brew-cask
+#   antigen-bundle gem
+#   antigen-bundle osx
 elif [[ $CURRENT_OS == 'Linux' ]]; then
     # None so far...
     fi
 
 antigen apply
 
-export CDPATH=$CDPATH:$HOME/Sites:$HOME
-export PATH=$HOME/.rbenv/bin:$HOME/bin:/opt/homebrew/bin:$HOME/.composer/vendor/bin:/usr/local/mysql/bin:$PATH
 export EDITOR=vim
 
 alias sshUi='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ec2-user@ui.softblade.net'
