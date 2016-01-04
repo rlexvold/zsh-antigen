@@ -5,7 +5,7 @@ antigen-use oh-my-zsh
 antigen-bundle git
 # antigen-bundle tmux
 # antigen-bundle tmuxinator
-# antigen-bundle zsh-users/zsh-syntax-highlighting
+antigen-bundle zsh-users/zsh-syntax-highlighting
 antigen-bundle scala
 antigen-bundle sbt
 antigen-bundle sudo
@@ -16,8 +16,8 @@ antigen-bundle mvn
 antigen-bundle colored-man-pages
 # antigen-bundle common-aliases
 
-# antigen-bundle zsh-users/zsh-history-substring-search
-# antigen-bundle $ZSHA_BASE/bundles/git-completion
+antigen-bundle zsh-users/zsh-history-substring-search
+antigen-bundle $ZSHA_BASE/bundles/git-completion
 
 antigen-theme $ZSHA_BASE/themes randy
 
@@ -27,15 +27,15 @@ antigen-theme $ZSHA_BASE/themes randy
 # antigen-bundle npm
 
 # Python Plugins
-# antigen-bundle pip
-# antigen-bundle python
+antigen-bundle pip
+antigen-bundle python
 
 # OS specific plugins
 if [[ $CURRENT_OS == 'OS X' ]]; then
     antigen-bundle brew
 #   antigen-bundle brew-cask
 #   antigen-bundle gem
-#   antigen-bundle osx
+   antigen-bundle osx
 elif [[ $CURRENT_OS == 'Linux' ]]; then
     # None so far...
     fi
