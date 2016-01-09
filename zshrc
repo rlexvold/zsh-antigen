@@ -45,6 +45,8 @@ antigen apply
 export EDITOR=vim
 
 alias sshUi='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ec2-user@ui.softblade.net'
-alias sshDb='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ubuntu@db.softblade.net'
+alias sshRest='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ec2-user@rest.softblade.net'
+alias sshDevDb='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ubuntu@dev-db.softblade.net'
+alias sshProdDb='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ubuntu@dev-db.softblade.net'
 alias sshSpark='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ubuntu@spark.softblade.net'
 alias sshCustomer='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ec2-user@customer.softblade.net'
