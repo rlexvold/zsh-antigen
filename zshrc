@@ -43,10 +43,20 @@ elif [[ $CURRENT_OS == 'Linux' ]]; then
 antigen apply
 
 export EDITOR=vim
+alias sshUi='~/.dot-files/softSsh ui'
+alias sshRest='~/.dot-files/softSsh rest'
+alias sshDevDb='~/.dot-files/softSsh dev-db'
+alias sshProdDb='~/.dot-files/softSsh prod-db'
+alias sshSpark='~/.dot-files/softSsh spark'
+alias sshCustomer='~/.dot-files/softSsh customer'
+alias sshJenkins='~/.dot-files/softSsh jenkins'
+alias sshProcessor='~/.dot-files/softSsh processor'
 
-alias sshUi='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ec2-user@ui.softblade.net'
-alias sshRest='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ec2-user@rest.softblade.net'
-alias sshDevDb='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ubuntu@dev-db.softblade.net'
-alias sshProdDb='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ubuntu@dev-db.softblade.net'
-alias sshSpark='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ubuntu@spark.softblade.net'
-alias sshCustomer='ssh -o ServerAliveInterval=60 -i ~/SoftBlade/robert.pem ec2-user@customer.softblade.net'
+alias scpUi='~/.dot-files/softCp ui $1 $2'
+alias scpRest='~/.dot-files/softScp rest $1 $2'
+alias scpDevDb='~/.dot-files/softScp dev-db $1 $2'
+alias scpProdDb='~/.dot-files/softScp prod-db $1 $2'
+alias scpSpark='~/.dot-files/softScp spark $1 $2'
+alias scpCustomer='~/.dot-files/softScp customer $1 $2'
+alias scpJenkins='~/.dot-files/softScp jenkins $1 $2'
+alias scpProcessor='~/.dot-files/softScp processor $1 $2'
